@@ -15,7 +15,7 @@ interface Person {
 
 // Type annotation in func param
 function greeter(person: Person) {
-    return "Hello, " + person;
+    return "Hello, " + person.firstName + " " + person.lastName;
 }
 
 // Code shows warning but still compiles to JS

@@ -10,7 +10,7 @@ var Student = /** @class */ (function () {
 }());
 // Type annotation in func param
 function greeter(person) {
-    return "Hello, " + person;
+    return "Hello, " + person.firstName + " " + person.lastName;
 }
 // Code shows warning but still compiles to JS
 //var user = [0, 1, 2];
