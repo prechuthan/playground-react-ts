@@ -1,6 +1,8 @@
+// Type annotation in func param
 function greeter(person) {
     return "Hello, " + person;
 }
-// let user = "Jane User";
-var user = [0, 1, 2];
+// Code shows warning but still compiles to JS
+//var user = [0, 1, 2];
+var user = { firstName: "Jane", lastName: "User" };
 document.body.textContent = greeter(user);
