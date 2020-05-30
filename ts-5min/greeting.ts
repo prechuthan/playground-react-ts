@@ -1,3 +1,12 @@
+// Class declaration with constructor
+class Student {
+    fullName: string;
+
+    constructor(public firstName: string, public middleInitial: string, public lastName: string) {
+        this.fullName = firstName + " " + middleInitial + " " + lastName;
+    }
+}
+
 // Description of Person interface
 interface Person {
     firstName: string;
