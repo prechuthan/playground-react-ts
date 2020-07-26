@@ -46,10 +46,12 @@ class Clock extends React.Component {
 
   componentDidMount() {
     this.timerID = setInterval(() => this.tick(), 1000);
+    console.log("Clock " + this.props.count + " DidMount");
   }
 
   componentWillUnmount() {
     clearInterval(this.timerID);
+    console.log("Clock " + this.props.count + " DidUnmount");
   }
 
   tick() {
@@ -61,7 +63,7 @@ class Clock extends React.Component {
       <div>
         <h1>Clock {this.props.count}</h1>
         <h2>{this.state.date.toLocaleTimeString()}</h2>
-        <p>Math.random() = {this.props.random}</p>
+        <p>Math.random() in ClockCollection = {this.props.random}</p>
       </div>
     );
   }
