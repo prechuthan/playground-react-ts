@@ -23,7 +23,7 @@ class ClockCollection extends React.Component {
     const random = Math.random();
 
     for (let i = 0; i < this.state.count; i++) {
-      clocks.push(<Clock count={i + 1} random={random} />);
+      clocks.push(<Clock key={i} count={i + 1} random={random} />);
     }
 
     return (
